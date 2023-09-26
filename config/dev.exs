@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :elixir_gist_clone, ElixirGistClone.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "elixir_gist_admin",
+  password: "very_secure_password",
   hostname: "localhost",
-  database: "elixir_gist_clone_dev",
+  database: "elixir_gist_clone",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
