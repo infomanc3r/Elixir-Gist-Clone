@@ -2,7 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* This file is for your main application CSS */
+form input[type="text"] {
+    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white
+}
+
+form input[type="text"]:focus {
+    @apply focus:outline-none focus:border-emLavender focus:ring-0
+}
+
 @font-face {
     font-family: "WorkSans";
     src: url("/fonts/WorkSans-Regular.ttf");
@@ -55,4 +62,21 @@
     border-width: 3px 3px 0 3px;
     border-color: white transparent transparent transparent;
     border-style: solid;
+}
+
+.textarea {
+    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+    border-top: none;
+}
+
+.textarea:focus {
+    @apply focus:outline-none focus:border-white focus:ring-0
+}
+
+.create_button {
+    @apply bg-emPurple font-brand font-regular text-black text-base border-white
+}
+
+.create_button:hover {
+    @apply hover:bg-emPurple-dark text-emDark-light border-emDark-light
 }
