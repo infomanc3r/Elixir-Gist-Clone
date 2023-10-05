@@ -78,5 +78,5 @@ form input[type="text"]:focus {
 }
 
 .create_button:hover {
-    @apply hover:bg-emPurple-dark text-emDark-light border-emDark-light
+    @apply hover:bg-emPurple-dark text-emDark-light border-white
 }
