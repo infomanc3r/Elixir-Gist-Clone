@@ -9,8 +9,8 @@ config :pbkdf2_elixir, :rounds, 1
 # to provide built-in test partitioning in CI environment.
 # Run `mix help test` for more information.
 config :elixir_gist_clone, ElixirGistClone.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "elixir_gist_admin",
+  password: "very_secure_password",
   hostname: "localhost",
   database: "elixir_gist_clone_test#{System.get_env("MIX_TEST_PARTITION")}",
   pool: Ecto.Adapters.SQL.Sandbox,
