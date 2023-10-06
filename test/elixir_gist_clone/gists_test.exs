@@ -81,7 +81,7 @@ defmodule ElixirGistClone.GistsTest do
     test "create_saved_gist/1 with valid data creates a saved_gist" do
       valid_attrs = %{}
 
-      assert {:ok, %SavedGist{} = saved_gist} = Gists.create_saved_gist(valid_attrs)
+      assert {:ok, %SavedGist{} = _saved_gist} = Gists.create_saved_gist(valid_attrs)
     end
 
     test "create_saved_gist/1 with invalid data returns error changeset" do
