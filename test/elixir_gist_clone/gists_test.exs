@@ -92,7 +92,7 @@ defmodule ElixirGistClone.GistsTest do
       saved_gist = saved_gist_fixture()
       update_attrs = %{}
 
-      assert {:ok, %SavedGist{} = saved_gist} = Gists.update_saved_gist(saved_gist, update_attrs)
+      assert {:ok, %SavedGist{} = _saved_gist} = Gists.update_saved_gist(saved_gist, update_attrs)
     end
 
     test "update_saved_gist/2 with invalid data returns error changeset" do

@@ -9,7 +9,6 @@ defmodule ElixirGistClone.Gists.Gist do
     field :description, :string
     field :markup_text, :string
     belongs_to :user, ElixirGistClone.Accounts.User
-    has_many :comments, ElixirGistClone.Comments.Comment
 
     timestamps()
   end

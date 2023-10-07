@@ -9,6 +9,7 @@ defmodule ElixirGistClone.Accounts.User do
     field :hashed_password, :string, redact: true
     field :confirmed_at, :naive_datetime
     has_many :gists, ElixirGistClone.Gists.Gist
+    has_many :comments, ElixirGistClone.Gists.Comment
 
     timestamps()
   end
